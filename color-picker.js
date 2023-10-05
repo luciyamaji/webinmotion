@@ -62,6 +62,7 @@ editButton.forEach(item => {
     var downloadEditedBtn = currentItem.querySelector("#downloadEdited");
     
     downloadEditedBtn.addEventListener('click', function () {
+      console.log('clicked');
       // Get current lottie JSON
       fetch(lottie_src) 
           .then((res) => { 
@@ -88,6 +89,7 @@ editButton.forEach(item => {
     // Get close button
     var closeButton = currentItem.querySelector("#editClose");
     closeButton.addEventListener('click', function() {
+      console.log('closed');
       lottie.goToAndStop(0, true, lottie_name);
     });
   });
