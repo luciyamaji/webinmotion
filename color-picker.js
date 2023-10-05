@@ -23,6 +23,7 @@ const editButton = document.querySelectorAll("#editButton");
 
 editButton.forEach(item => {
   item.addEventListener("click", function(e) {
+    console.log('edit-clicked');
     // Get parent with button and edit popup
     var currentItem = e.currentTarget.parentNode.parentNode.parentNode;
 //      console.log(currentItem);
@@ -60,6 +61,7 @@ editButton.forEach(item => {
     
     // Get current download button
     var downloadEditedBtn = currentItem.querySelector("#downloadEdited");
+    console.log(downloadEditedBtn);
     
     downloadEditedBtn.addEventListener('click', function () {
       console.log('clicked');
