@@ -38,6 +38,8 @@ Webflow.push(() => {
 			
 			// Reset animations to 0
 			lottie.goToAndStop(0, true)
+
+			playPreview()
 			
 			})
 		})
