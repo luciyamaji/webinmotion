@@ -34,6 +34,8 @@ editButton.forEach(item => {
     var lottie_name = lottie_edit.getAttribute("data-w-id");
     var lottie_src = lottie_edit.getAttribute("data-src");
     lottie.play(lottie_name);
+    console.log(lottie_src);
+    console.log(typeof lottie_src);
     
     // Get current picker
     var hexInput = currentItem.querySelector("#hexInput");
@@ -59,6 +61,9 @@ editButton.forEach(item => {
         paths[i].style.stroke = this.hexString;
       };
     });
+
+    import data from lottie_src assert { type: 'json' };
+    console.log(data);
   
   });
 });
